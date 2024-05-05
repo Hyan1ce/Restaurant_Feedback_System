@@ -7,13 +7,21 @@
 
 #include<string>
 
-class admin {
+class Admin {
 private:
     std::string account;
     std::string password;
 
 public:
-    bool login(std::string _account, std::string _password);
+    std::string get_account();
+
+    std::string get_password();
+
+    bool set_account(std::string);
+
+    bool set_password(std::string);
+
+    bool login(const std::string& _account, const std::string& _password);
 
     bool add_new_admin(std::string _account, std::string _password);
 

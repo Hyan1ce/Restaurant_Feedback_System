@@ -49,8 +49,8 @@ cmake_ninja_workdir = D$:/GitRepo/Restaurant_Feedback_System/cmake-build-debug/
 
 build cmake_object_order_depends_target_Restaurant_Feedback_System: phony || CMakeFiles/Restaurant_Feedback_System.dir
 
-build CMakeFiles/Restaurant_Feedback_System.dir/src/admin.cpp.obj: CXX_COMPILER__Restaurant_Feedback_System_unscanned_Debug D$:/GitRepo/Restaurant_Feedback_System/src/admin.cpp || cmake_object_order_depends_target_Restaurant_Feedback_System
-  DEP_FILE = CMakeFiles\Restaurant_Feedback_System.dir\src\admin.cpp.obj.d
+build CMakeFiles/Restaurant_Feedback_System.dir/src/Admin.cpp.obj: CXX_COMPILER__Restaurant_Feedback_System_unscanned_Debug D$:/GitRepo/Restaurant_Feedback_System/src/Admin.cpp || cmake_object_order_depends_target_Restaurant_Feedback_System
+  DEP_FILE = CMakeFiles\Restaurant_Feedback_System.dir\src\Admin.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -ID:/GitRepo/Restaurant_Feedback_System/.
   OBJECT_DIR = CMakeFiles\Restaurant_Feedback_System.dir
@@ -85,7 +85,7 @@ build CMakeFiles/Restaurant_Feedback_System.dir/src/main.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable Restaurant_Feedback_System.exe
 
-build Restaurant_Feedback_System.exe: CXX_EXECUTABLE_LINKER__Restaurant_Feedback_System_Debug CMakeFiles/Restaurant_Feedback_System.dir/src/admin.cpp.obj CMakeFiles/Restaurant_Feedback_System.dir/src/user.cpp.obj CMakeFiles/Restaurant_Feedback_System.dir/src/dish.cpp.obj CMakeFiles/Restaurant_Feedback_System.dir/src/main.cpp.obj
+build Restaurant_Feedback_System.exe: CXX_EXECUTABLE_LINKER__Restaurant_Feedback_System_Debug CMakeFiles/Restaurant_Feedback_System.dir/src/Admin.cpp.obj CMakeFiles/Restaurant_Feedback_System.dir/src/user.cpp.obj CMakeFiles/Restaurant_Feedback_System.dir/src/dish.cpp.obj CMakeFiles/Restaurant_Feedback_System.dir/src/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Restaurant_Feedback_System.dir

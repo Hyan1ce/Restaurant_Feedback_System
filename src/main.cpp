@@ -3,45 +3,100 @@
 //
 #include<iostream>
 #include<string>
-#include"admin.h"
+#include"Admin.h"
 #include"user.h"
 #include"dish.h"
 
 using namespace std;
 
-void admin_op();
+void admin_login();
+
 void users_op();
+
 void exit();
 
+int choose_op();
+
 int main() {
+    //ÓÃ»§Ñ¡ÔñµÇÂ¼²Ù×÷
+    int chosen = choose_op();
+    while (!chosen) {
+        system("cls");
+        cout << "ÊäÈë´íÎó£¬ÇëÖØÐÂÊäÈë£¡" << endl;
+        chosen = choose_op();
+    }
+
+    //µÇÂ¼³É¹¦ºó²Ù×÷£¬´ýÐÞ¸Ä
+    switch (chosen) {
+        case 1:
+            //admin_op();
+            break;
+        case 2:
+            //users_op();
+            break;
+        case 3:
+            //exit();
+            break;
+        default:
+            break;
+    }
+}
+
+int choose_op() {
     cout << "**********************************************" << endl
-         << "é¥•åœ¨å±±é’ï¼æ¬¢è¿Žè¿›å…¥å±±ä¸œå¤§å­¦é’å²›æ ¡åŒºé¤åŽ…åé¦ˆç³»ç»Ÿ" << endl
-         << "è¯·é€‰æ‹©ä»¥ä½•ç§èº«ä»½ç™»å½•(è¯·è¾“å…¥ç›¸åº”æ•°å­—)ï¼Ÿ" << endl
-         << "1.ç³»ç»Ÿç®¡ç†å‘˜" << endl
-         << "2.å­¦ç”Ÿ/æ•™å¸ˆç”¨æˆ·" << endl
-         << "3.é€€å‡º" << endl;
+         << "»¶Ó­½øÈëÉ½¶«´óÑ§²ÍÌü·´À¡ÏµÍ³" << endl
+         << "ÇëÑ¡ÔñÒÔºÎÖÖÉí·ÝµÇÂ¼(ÇëÊäÈëÏàÓ¦Êý×Ö)£¿" << endl
+         << "1.ÏµÍ³¹ÜÀíÔ±" << endl
+         << "2.Ñ§Éú/½ÌÊ¦ÓÃ»§" << endl
+         << "3.ÍË³ö" << endl;
     char op;
-    cin>>op;
+    cin >> op;
     switch (op) {
         case '1':
-            admin_op();
+            admin_login();
+            return 1;
         case '2':
             users_op();
+            return 2;
         case '3':
             exit();
+            return 3;
+        default:
+            cout << "ÊäÈë´íÎó£¬ÇëÖØÐÂÊäÈë£¡" << endl;
+            return 0;
     }
-    return 0;
 }
 
-void admin_op(){
-
+void admin_login() {
+    std::string _account;
+    std::string _password;
+    system("cls");
+    while (true) {
+        cout << "ÊäÈëÕËºÅÃÜÂë£¬ÓÃ»Ø³µ·Ö¸ô£¬ÊäÈë exit ÍË³öÏµÍ³" << endl;
+        Admin admin;
+        cin >> _account;
+        admin.set_account(_account);
+        if (_account == "exit") break;
+        else {
+            cin >> _password;
+            admin.set_password(_password);
+            bool login_succeed = admin.login(_account, _password);
+            if (login_succeed) {
+                cout << "µÇÂ½³É¹¦£¡" << endl;
+                break;
+            } else {
+                std::cout << "ÕËºÅ»òÃÜÂë´íÎó£¬µÇÂ½Ê§°Ü£¡" << std::endl;
+                continue;//µÇÂ¼Ê§°Ü£¬ÖØÐÂÊäÈëÕËºÅÃÜÂë
+            }
+        }
+    }
 }
 
-void users_op(){
-
+void users_op() {
+    cout << "op" << endl;
 }
 
-void exit(){
-
+void exit() {
+    cout << "exit" << endl;
 }
 

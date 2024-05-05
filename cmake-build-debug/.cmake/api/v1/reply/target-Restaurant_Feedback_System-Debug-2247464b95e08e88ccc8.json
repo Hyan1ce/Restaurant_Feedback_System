@@ -127,12 +127,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/admin.cpp",
+			"path" : "src/Admin.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/admin.h",
+			"path" : "src/Admin.h",
 			"sourceGroupIndex" : 1
 		},
 		{

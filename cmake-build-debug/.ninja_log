@@ -1,0 +1,13 @@
+# ninja log v5
+2	628	7365086253609549	CMakeFiles/Restaurant_Feedback_System.dir/src/admin.cpp.obj	5fb6bdf507c8cdfb
+29	794	7365086255289665	CMakeFiles/Restaurant_Feedback_System.dir/src/user.cpp.obj	d9a5a4410757ccf9
+724	1009	7365089007299613	Restaurant_Feedback_System.exe	4c7bba7bd80e9978
+57	811	7365086255449681	CMakeFiles/Restaurant_Feedback_System.dir/src/dish.cpp.obj	a19915347df753a7
+6	723	7365089004529440	CMakeFiles/Restaurant_Feedback_System.dir/src/main.cpp.obj	476d4a047c718ee5
+33	4710	7366229150265779	CMakeFiles/Restaurant_Feedback_System.dir/src/main.cpp.obj	476d4a047c718ee5
+8	4711	7366229150265779	CMakeFiles/Restaurant_Feedback_System.dir/src/Admin.cpp.obj	cbe97dc5e8fadb87
+4712	11570	7366229218785053	Restaurant_Feedback_System.exe	159deb1193ec8797
+8	868	7366229767637887	CMakeFiles/Restaurant_Feedback_System.dir/src/Admin.cpp.obj	cbe97dc5e8fadb87
+869	1093	7366229769823391	Restaurant_Feedback_System.exe	159deb1193ec8797
+8	1026	7366230205487284	CMakeFiles/Restaurant_Feedback_System.dir/src/Admin.cpp.obj	cbe97dc5e8fadb87
+1028	1321	7366230208384853	Restaurant_Feedback_System.exe	159deb1193ec8797
